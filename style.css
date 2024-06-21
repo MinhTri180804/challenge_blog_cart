@@ -1,0 +1,130 @@
+:root {
+  --primary-color: hsl(47, 88%, 63%);
+  --white-color: hsl(0, 0%, 100%);
+  --grey-color: hsl(0, 0%, 50%);
+  --black-color: hsl(0, 0%, 7%);
+}
+
+html {
+  font-family: 'Figtree', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  height: calc(100dvh - 16px);
+  background-color: var(--primary-color);
+}
+
+.cart__blog {
+  max-width: 336px;
+  padding: 24px;
+  background-color: var(--white-color);
+  border: 1px solid var(--black-color);
+  border-radius: 20px;
+  box-shadow: 8px 8px #000;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.cart__blog:hover {
+  box-shadow: 16px 16px #000;
+}
+
+.cart__blog-image {
+  width: 100%;
+}
+
+.cart__blog-image img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+}
+
+.cart__blog-content {
+  margin: 24px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.blog__content-tag {
+  padding: 4px 12px;
+  line-height: 150%;
+  border-radius: 4px;
+  background-color: var(--primary-color);
+  font-weight: 800;
+  text-transform: capitalize;
+  display: inline-block;
+  width: fit-content;
+  font-size: 14px;
+}
+
+.blog__content-date {
+  font-size: 14px;
+  color: var(--black-color);
+}
+
+.blog__content-heading h2 {
+  font-size: 24px;
+  font-weight: 800;
+  margin: 0;
+  color: var(--black-color);
+  line-height: 150%;
+  transition: color 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.blog__content-heading h2:hover {
+  color: var(--primary-color);
+}
+
+.blog__content-description {
+  color: var(--grey-color);
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.cart__blog-author {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.cart__blog-author:hover .blog__author-image img {
+  transform: scale(1.1);
+}
+
+.cart__blog-author:hover .blog__author-name {
+  color: var(--primary-color);
+}
+
+.blog__author-image {
+  width: 32px;
+  height: 32px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.blog__author-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.blog__author-name {
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 150%;
+  transition: color 0.3s ease-in-out;
+}
