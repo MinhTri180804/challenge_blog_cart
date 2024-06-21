@@ -69,7 +69,7 @@ body {
   color: var(--black-color);
 }
 
-.blog__content-heading h2 {
+.blog__content-heading h1 {
   font-size: 24px;
   font-weight: 800;
   margin: 0;
@@ -79,7 +79,7 @@ body {
   cursor: pointer;
 }
 
-.blog__content-heading h2:hover {
+.blog__content-heading h1:hover {
   color: var(--primary-color);
 }
 
